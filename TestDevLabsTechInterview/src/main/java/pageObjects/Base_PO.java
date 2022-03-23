@@ -59,12 +59,9 @@ public class Base_PO {
 
 
     public void validateText(By by, String text){
-        try {
             WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(15));
             wait.until(ExpectedConditions.textToBe(by, text));
-        }catch(Exception e){
-            System.out.println(e.toString());
-        }
+
 
     }
 
