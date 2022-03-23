@@ -45,6 +45,7 @@ public class Signin_PO extends Base_PO {
 
     public void validateErrorMessage(){
         switchToATab(0);
+        //it is necessary to change the validated text if your oracle website is in another language
         validateText(By.xpath("//*[@id='errormsg']/div"), "Nome de utilizador e/ou senha inválidos.");
     }
 
